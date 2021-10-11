@@ -586,9 +586,9 @@ def negative(request):
 
 
 def all_dataset(request):
-    response = HttpResponse(open('Dine_brand.xlsx', 'rb').read(), content_type='text/xlsx')
-    response['Content-Length'] = os.path.getsize('Dine_brand.xlsx')
-    response['Content-Disposition'] = 'attachment; filename=%s' % 'Dine_brand.xlsx'
+    response = HttpResponse(open('Dine_Brand.xlsx', 'rb').read(), content_type='text/xlsx')
+    response['Content-Length'] = os.path.getsize('Dine_Brand.xlsx')
+    response['Content-Disposition'] = 'attachment; filename=%s' % 'Dine_Brand.xlsx'
     return response
 
 
